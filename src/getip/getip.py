@@ -5,7 +5,7 @@ import ssl
 get_string = "GET / HTTP/1.1\r\nHost:{}\r\nConnection:close\r\n\r\n"
 
 
-def getip(server: str = "ifconfig.me", is_ssl: bool = True) -> str:
+def getip(server: str = "ifconfig.me") -> str:
     context = ssl.create_default_context()
 
     data = ""
